@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
+  --background: #282c33;
   --foreground: #171717;
 }
 
@@ -12,15 +12,173 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-header {
+  background: #282c33;
+  color: #aeb3c0;
+  font-family: var(--font-geist-mono), monospace;
+  position: relative;
+  z-index: 10;
+}
+
+.site-header-inner {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  height: 80px;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.site-logo {
+  align-items: center;
+  border: 0;
+  color: #f0f0f1;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 700;
+  gap: 5px;
+  letter-spacing: 0.02em;
+  order: 1;
+  text-decoration: none;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  display: block;
+  flex: 0 0 24px;
+  height: 24px;
+  object-fit: cover;
+  width: 24px;
+}
+
+.menu-toggle {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: #aeb3c0;
+  cursor: pointer;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  margin-left: auto;
+  order: 2;
+  padding: 0;
+  width: 34px;
+}
+
+.menu-toggle svg {
+  font-size: 22px;
+  stroke-width: 1.4;
+}
+
+.desktop-navigation {
+  display: none;
+}
+
+.mobile-navigation {
+  background: #282c33;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 27px 12px 57px;
+}
+
+.mobile-navigation a {
+  color: #aeb3c0;
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.menu-is-open .menu-toggle {
+  margin-left: auto;
+}
+
+.menu-is-open .mobile-navigation {
+  box-sizing: border-box;
+  gap: 50px;
+  margin: 28px 0 0;
+  padding: 0 0 57px 45px;
+  width: 100%;
+}
+
+.menu-is-open .mobile-navigation a {
+  display: block;
+  padding: 0;
+}
+
+.mobile-social-links {
+  align-items: center;
+  display: flex;
+  gap: 26px;
+  justify-content: center;
+  margin-top: 89px;
+  padding: 0 0 32px;
+}
+
+.mobile-social-links a {
+  color: #aeb3c0;
+  font-size: 36px;
+  line-height: 1;
+}
+
+@media (min-width: 768px) {
+  .site-header {
+    min-height: 80px;
+    padding-left: 0;
+  }
+
+  .menu-is-open .menu-toggle {
+    order: initial;
+  }
+
+  .menu-toggle,
+  .mobile-navigation,
+  .mobile-social-links {
+    display: none;
+  }
+
+  .site-header-inner {
+    box-sizing: border-box;
+    height: 80px;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 930px;
+    padding: 0 16px;
+  }
+
+  .site-logo {
+    font-size: 16px;
+    order: initial;
+  }
+
+  .menu-toggle {
+    margin-left: initial;
+    order: initial;
+  }
+
+  .desktop-navigation {
+    align-items: center;
+    display: flex;
+    gap: 31px;
+    margin-right: 0;
+  }
+
+  .desktop-navigation a {
+    color: #aeb3c0;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .desktop-navigation a:hover,
+  .desktop-navigation a:focus-visible {
+    color: #f0f0f1;
+  }
 }
