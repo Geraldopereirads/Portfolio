@@ -2,26 +2,53 @@
 
 Este é o repositório do meu portfólio pessoal.
 
-Resolvi criar este projeto para ter um espaço onde eu possa apresentar meus projetos, compartilhar alguns aprendizados e reunir informações profissionais em um único lugar.
+Criei este projeto para reunir minha trajetória como desenvolvedor, apresentar os projetos nos quais venho trabalhando e compartilhar um pouco do que tenho aprendido ao longo da jornada.
 
-Além de servir como cartão de visitas, o objetivo também é acompanhar minha evolução como desenvolvedor ao longo do tempo.
+Além de funcionar como um espaço para apresentar minhas experiências, o portfólio também serve como uma forma de acompanhar minha evolução profissional e técnica ao longo do tempo.
 
-Atualmente meu foco principal está em Backend com C# e .NET, mas também trabalho com tecnologias como React, Next.js e React Native.
+Atualmente atuo como desenvolvedor freelancer e tenho direcionado meus estudos e projetos para o ecossistema .NET, sem deixar de lado tecnologias que também fazem parte do meu dia a dia, como React, Next.js, TypeScript e React Native.
 
-O portfólio está sendo desenvolvido do zero utilizando Next.js e continuará recebendo melhorias conforme novos projetos, experiências e artigos forem sendo adicionados.
+O projeto está sendo desenvolvido do zero utilizando Next.js e continuará evoluindo conforme novos projetos, experiências e conteúdos forem sendo adicionados.
+
+---
 
 ## Tecnologias utilizadas
 
 - Next.js
+- React
 - TypeScript
 - Tailwind CSS
 - ESLint
 
+---
+
+## O que você encontrará neste portfólio
+
+- Informações sobre minha trajetória na programação
+- Projetos desenvolvidos ao longo da minha jornada
+- Experiências e aprendizados obtidos em projetos reais
+- Artigos e conteúdos relacionados a desenvolvimento de software
+- Formas de contato profissional
+
+---
+
+## Estrutura do projeto
+
+O portfólio está sendo organizado em páginas independentes para facilitar a navegação e a manutenção do projeto:
+
+- Página Inicial
+- Sobre Mim
+- Projetos
+- Blog
+- Artigos
+- Contato
+
+---
 
 ## Status do projeto
 
-O portfólio ainda está em desenvolvimento.
+O projeto está em desenvolvimento ativo.
 
-As próximas etapas incluem a implementação das páginas de projetos, blog, artigos, sobre mim e contato.
+Atualmente já possui a estrutura inicial da aplicação, navegação utilizando App Router, além das primeiras páginas e componentes principais, como Header, Footer e Home.
 
-Atualmente atuo como desenvolvedor freelancer e estou construindo experiência prática através de projetos reais enquanto continuo aprofundando meus estudos em desenvolvimento de software, especialmente no ecossistema .NET.
+As próximas etapas incluem a implementação das páginas de projetos, blog, artigos, sobre mim e contato, além da integração dos conteúdos que farão parte do portfólio.
