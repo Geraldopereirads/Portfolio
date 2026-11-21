@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import imageDesktop from "@/assets/ImageDesktop.png";
 import imageMobile from "@/assets/ImageMobile.png";
 
@@ -19,9 +20,9 @@ export default function Home() {
               technologies meet creativity
             </p>
 
-            <a className="home-contact-button" href="#contato">
+            <Link className="home-contact-button" href="/contato">
               Contact me!!
-            </a>
+            </Link>
           </div>
 
           <div className="home-hero-art" aria-hidden="true">
@@ -68,9 +69,9 @@ export default function Home() {
             úteis, organizadas e fáceis de evoluir.
           </p>
 
-          <a className="home-read-more" href="#sobre">
+          <Link className="home-read-more" href="/sobre">
             Read more <span aria-hidden="true">-&gt;</span>
-          </a>
+          </Link>
         </div>
       </section>
     </main>
