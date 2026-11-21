@@ -6,8 +6,7 @@ import Link from "next/link";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { BiSolidFilePdf } from "react-icons/bi";
 import { FiMenu, FiX } from "react-icons/fi";
-
-const navigationItems = ["Início", "Projetos", "Sobre", "Contato", "Blog"];
+import { NavigationLinks } from "@/page/navigation/navigation";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -26,7 +25,7 @@ export default function Header() {
           {isMenuOpen ? <FiX aria-hidden="true" /> : <FiMenu aria-hidden="true" />}
         </button>
 
-        <Link className="site-logo" href="/" aria-label="Geraldo - início">
+        <Link className="site-logo" href="/inicio" aria-label="Geraldo - início">
           <Image
             className="profile-photo"
             src="https://github.com/Geraldopereirads.png"
@@ -38,11 +37,7 @@ export default function Header() {
         </Link>
 
         <nav className="desktop-navigation" aria-label="Navegação principal">
-          {navigationItems.map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`}>
-              {item}
-            </a>
-          ))}
+          <NavigationLinks />
         </nav>
       </div>
 
@@ -52,11 +47,7 @@ export default function Header() {
           className="mobile-navigation"
           aria-label="Navegação principal"
         >
-          {navigationItems.map((item) => (
-            <a key={item} href={`#${item.toLowerCase()}`} onClick={() => setIsMenuOpen(false)}>
-              {item}
-            </a>
-          ))}
+          <NavigationLinks onNavigate={() => setIsMenuOpen(false)} />
         </nav>
       )}
 
