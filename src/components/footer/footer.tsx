@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { BiSolidFilePdf } from "react-icons/bi";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
@@ -26,13 +25,6 @@ export default function Footer() {
       <div className="site-footer-main">
         <div className="footer-profile">
           <div className="footer-profile-heading">
-            <Image
-              className="footer-profile-photo"
-              src="https://github.com/Geraldopereirads.png"
-              alt=""
-              width={20}
-              height={20}
-            />
             <span>Geraldo</span>
             <a
               className="footer-email"
