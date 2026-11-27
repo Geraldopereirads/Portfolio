@@ -8,6 +8,11 @@ const nextConfig: NextConfig = {
         hostname: "github.com",
         pathname: "/Geraldopereirads.png",
       },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
+        pathname: "/dqtzdncbx/image/upload/**",
+      },
     ],
   },
   turbopack: {
