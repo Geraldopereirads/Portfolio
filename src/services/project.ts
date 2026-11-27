@@ -3,39 +3,47 @@ import { ProjectsData } from "@/interface/projects.interface";
 export const projects: ProjectsData[] = [
   {
     id: "1",
-    title: "KIMoveis",
     image:
-      "https://asset.cloudinary.com/dqtzdncbx/6001306e965fd278313652a226d99470",
+      "https://res.cloudinary.com/dqtzdncbx/image/upload/v1795745936/KiMoveis.png",
+    technologies: "TypeScript | Node | Express",
+    title: "KIMoveis",
     url: "https://kimoveis-pgbl.onrender.com/api-docs/",
     github: "https://github.com/Geraldopereirads/KImoveis",
   },
   {
     id: "2",
-    title: "Recevita",
     image:
-      "https://asset.cloudinary.com/dqtzdncbx/30e9f6955eb57a867337ae35399d26e3",
+      "https://res.cloudinary.com/dqtzdncbx/image/upload/v1795746814/Design_sem_nome_2.png",
+    technologies: "C# | .NET | SQL Server",
+    title: "Recevita",
     url: "https://github.com/Geraldopereirads/Recevita",
     github: "https://github.com/Geraldopereirads/Recevita",
   },
   {
     id: "3",
+    image:
+      "https://res.cloudinary.com/dqtzdncbx/image/upload/v1795748684/Design_sem_nome.png",
+    technologies: "React | TypeScript",
     title: "Hamburgueria",
-    image: "https://asset.cloudinary.com/dqtzdncbx/5d2762277c82f48cadb07b0f89809421",
     url: "https://github.com/Geraldopereirads/Hamburgueria-2.0",
     github: "https://github.com/Geraldopereirads/Hamburgueria-2.0",
   },
 
   {
     id: "4",
+    image:
+      "https://res.cloudinary.com/dqtzdncbx/image/upload/v1795748998/3.png",
+    technologies: "C# | .NET |",
     title: "VehicleHub",
-    image:"https://asset.cloudinary.com/dqtzdncbx/58a8f126060d8061a5b5b8e32deaf20e",
     url: "https://github.com/Geraldopereirads/VehicleHub.API",
     github: "https://github.com/Geraldopereirads/VehicleHub.API",
   },
   {
     id: "6",
+    image:
+      "https://res.cloudinary.com/dqtzdncbx/image/upload/v1795749050/4.png",
+    technologies: "C# | .NET | SQL Server",
     title: "Ismirk",
-    image:"https://asset.cloudinary.com/dqtzdncbx/6be30e7a0609e712779fbd3c66d84100",
     url: "Aplicativos em desenvolvimento.",
     github: "Código-fonte sob acordo de confidencialidade.",
   },
