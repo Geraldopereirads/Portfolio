@@ -19,6 +19,7 @@ O projeto está sendo desenvolvido do zero utilizando Next.js e continuará evol
 - TypeScript
 - Tailwind CSS
 - ESLint
+- Zod
 
 ---
 
