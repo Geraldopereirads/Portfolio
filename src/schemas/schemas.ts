@@ -8,3 +8,10 @@ export const ProjectsSchema = z.object({
   url: z.string(),
   github: z.string(),
 });
+
+export const TechnologiesSchema = z.object({
+  id: z.string(),
+  category: z.string(),
+  technologiesOne: z.string(),
+  technologiesTwo: z.string(),
+});
