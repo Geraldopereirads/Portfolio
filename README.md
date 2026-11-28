@@ -53,3 +53,15 @@ O projeto está em desenvolvimento ativo.
 Atualmente já possui a estrutura inicial da aplicação, navegação utilizando App Router, além das primeiras páginas e componentes principais, como Header, Footer e Home.
 
 As próximas etapas incluem a implementação das páginas de projetos, blog, artigos, sobre mim e contato, além da integração dos conteúdos que farão parte do portfólio.
+
+---
+
+### Roadmap
+
+- [x] Pagina Inicial
+- [x] Sobre Mim
+- [x] Projetos
+- [ ] Blog
+- [ ] Artigos
+- [ ] Contato
+
